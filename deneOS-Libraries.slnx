@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path="publish.yml" />
+  </Folder>
   <Project Path="dosu.AI/dosu.AI.csproj" />
   <Project Path="dosu.System/dosu.System.csproj" />
   <Project Path="dosu.UI/dosu.UI.csproj" />
