@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '10.0.x'
 
     - name: Restore
       run: dotnet restore
@@ -27,10 +27,11 @@ jobs:
     - name: Pack all csproj
       run: |
         mkdir nupkg
-        for proj in $(find ./deneOS-Libraries -name "*.csproj"); do
+        for proj in $(find . -name "*.csproj"); do
           echo "Packing $proj"
           dotnet pack "$proj" --configuration Release --no-build -o ./nupkg
         done
+
 
     - name: Publish all packages
       run: |
