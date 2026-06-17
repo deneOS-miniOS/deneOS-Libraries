@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <SelfContained>true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
+	  <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
